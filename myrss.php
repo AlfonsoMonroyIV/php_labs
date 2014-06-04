@@ -1,8 +1,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <?php
-	$url = "http://www.eluniversal.com.mx/rss/edomex.xml";
+	//$url = "http://www.eluniversal.com.mx/rss/edomex.xml";
 	//$url = "http://sports.espn.go.com/espn/rss/news";
-	//$url = "http://excelsior.feedsportal.com/c/33879/f/656214/index.rss";
+	$url = "http://excelsior.feedsportal.com/c/33879/f/656214/index.rss";
 	$rss = simplexml_load_file($url);
 	if($rss){
 		echo '<h1>'.$rss->channel->title.'</h1>';
